@@ -1,0 +1,175 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: #000000e0;
+  font-family: "poppins", sans-serif;
+  color: #fff;
+}
+.card_container {
+  height: 100vh;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  border-radius: 10px;
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(5, 213, 250);
+  background: linear-gradient(
+    332deg,
+    rgba(5, 213, 250, 1) 1%,
+    rgba(16, 97, 252, 1) 12%,
+    rgba(25, 0, 253, 1) 16%,
+    rgba(12, 161, 250, 1) 20%,
+    rgba(7, 214, 249, 1) 24%,
+    rgba(5, 213, 250, 1) 29%,
+    rgba(0, 210, 253, 1) 47%,
+    rgba(80, 255, 203, 1) 81%,
+    rgba(30, 248, 228, 1) 84%
+  );
+}
+.Enter {
+  margin-top: 25px;
+  display: flex;
+}
+input {
+  margin-left: -20px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  width: 250px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  padding: 20px;
+}
+button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+}
+#search {
+  width: 20px;
+  cursor: pointer;
+}
+button {
+  border: none;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.error {
+  margin-top: 100px;
+  display: none;
+}
+.whether {
+  text-align: center;
+  margin-top: -40px;
+}
+.temp {
+  font-size: 50px;
+  margin-bottom: 5px;
+}
+.city_name {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+#whether_img {
+  width: 150px;
+}
+.other_container {
+  display: flex;
+  justify-content: space-between;
+}
+.other1 {
+  display: flex;
+}
+.other2 {
+  display: flex;
+}
+.other1 {
+  padding-left: -120px;
+}
+.humidity {
+  font-size: 16px;
+  padding-top: 5px;
+  padding-left: 20px;
+}
+.wind {
+  font-size: 16px;
+  padding-top: 5px;
+  padding-left: 20px;
+}
+.other1 span,
+.other2 span {
+  padding-top: 5px;
+  padding-left: 20px;
+  font-size: 12px;
+}
+.other2 {
+  padding-left: 100px;
+}
+.humidity_img img {
+  width: 30px;
+  padding-top: 13px;
+}
+.wind_img img {
+  width: 30px;
+  padding-top: 13px;
+}
+.whether {
+  display: none;
+}
+@media all and (max-width: 402px) {
+  .card {
+    width: 200px;
+  }
+  .Enter {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  input {
+    width: 100px;
+  }
+  #whether-img {
+    margin-top: 30px;
+    width: 120px;
+  }
+  .temp {
+    font-size: 20px;
+  }
+  .other1 {
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .other2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+  }
+  .humidity_img {
+    margin-left: 18px;
+  }
+  .wind_img {
+    margin-left: 10px;
+  }
+}
